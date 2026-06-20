@@ -15,6 +15,14 @@ Third-generation Azure OpenAI voice bot with FastAPI, speech processing, and ACS
 
 Third-generation Azure OpenAI voice bot with FastAPI, speech processing, and ACS WhatsApp event handling.
 
+## 📖 The Story
+
+Voicebot v3 continues the progression from an API demo toward an event-driven communication service. It keeps the text, audio, RAG, and WhatsApp capabilities of earlier versions while making ACS Event Grid processing a first-class part of the request flow.
+
+The repository illustrates how synchronous AI endpoints and asynchronous channel events can coexist. Azure OpenAI handles language and speech, FAISS supports document grounding, and the routing layer coordinates direct API calls, Meta webhooks, media retrieval, and ACS events.
+
+The next chapter is consolidation: define a single messaging abstraction, add idempotency and replay protection for events, and measure the reliability of the complete customer journey.
+
 ## Highlights
 
 - Text conversation endpoint
@@ -92,4 +100,5 @@ This is a learning and reference implementation. Review security, validation, mo
 - Define retention and privacy controls for audio and customer data.
 
 > This README reflects the current codebase. External AI, telephony, and messaging features require their respective accounts, assets, and approvals.
+
 
